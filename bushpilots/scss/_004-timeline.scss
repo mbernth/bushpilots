@@ -1,0 +1,51 @@
+/* ### Timeline
+---------------------------------------------------------------------- */
+.block-timeline{
+    padding: var(--margin-l) 0 var(--margin-m) 0;
+    background-color: var(--color-shade);
+    color: var(--color-tint);
+    .wrap{
+        width: 100%;
+        max-width: var(--content-width);
+    }
+    hr.line{
+        margin: var(--margin-l) 0 var(--margin-m) 0;
+        background-color: var(--color-tint);
+        height: 2px;
+        border: none;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+    h2{
+        font-family: var(--font-light);
+        font-size: clamp(var(--font-size-l), 4vw, var(--font-size-xxl));
+        line-height: 1;
+        color: var(--color-tint);
+        text-transform: uppercase;
+        margin-bottom: var(--margin-xs);
+    }
+    h3{
+        font-size: clamp(var(--font-size-xxl), 4vw, var(--font-size-xxxxl));
+        color: var(--color-tint);
+    }
+    figure{
+        padding: var(--margin-l) 0;
+        overflow-x: auto;
+        img{
+            max-width: 780px;
+            width: 780px;
+            @media only screen and (min-width: $mq-tablet) {
+                max-width: 1024px;
+                width: 1024px;
+            }
+            @media only screen and (min-width: $mq-tabletbig) {
+                max-width: 1280px;
+                width: 1280px;
+            }
+            @media only screen and (min-width: $mq-laptop) {
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+}

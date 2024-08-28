@@ -1,0 +1,62 @@
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	word-wrap: break-word;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: 0;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* ## Footer Widget
+---------------------------------------------------------------------- */
+
+.footer-widgets{
+	position: relative;
+	width: 100%;
+	padding-top: var(--margin-m);
+	padding-bottom: var(--margin-m);
+	padding-left: var(--site-margin);
+	padding-right: var(--site-margin);
+	font-family: var(--font-regular);
+	background-color: $color-secondary;
+	.wrap{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: auto;
+		gap: var(--margin-m);
+		margin:0 auto;
+		width: 100%;
+		max-width: var(--content-width);
+	}
+	h1,h2,h3,h4,h5,h6,p{
+		
+	}
+	.widget-area{
+		min-height: var(--margin-l);
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-between;
+		font-size: var(--font-size-s);
+		
+	}
+}

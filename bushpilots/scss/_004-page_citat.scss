@@ -1,0 +1,23 @@
+/* # Page Citat
+---------------------------------------------------------------------------------------------------- */
+
+.block-page-quote{
+    padding-top:0;
+    padding-bottom: var(--margin-m);
+    color: var(--color-tint);
+    background-color: var(--color-shade);
+    .wrap{
+        width: 100%;
+        max-width: var(--content-width);
+        blockquote{
+            font-family: var(--font-bold);
+            font-size: var(--font-size-h2);
+            font-style: normal;
+            color: var(--color-tint);
+            width: 100%;
+            max-width: var(--measure-0);
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

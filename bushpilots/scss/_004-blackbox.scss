@@ -1,0 +1,19 @@
+/* # Body content
+---------------------------------------------------------------------------------------------------- */
+
+.block-page-black-box{
+    padding-top:var(--margin-l);
+    padding-bottom: var(--margin-l);
+    background-color: var(--color-shade);
+    .wrap{
+        width: 100%;
+        max-width: var(--content-width);
+        p{
+            font-family: var(--font-light);
+            font-size: var(--font-size-xxxxl);
+            font-size: clamp(var(--font-size-xxl), 4vw, var(--font-size-xxxxl));
+            text-transform: uppercase;
+            color: var(--color-tint);
+        }     
+    }
+}

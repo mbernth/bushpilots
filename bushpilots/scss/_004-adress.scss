@@ -1,0 +1,25 @@
+/* # Adress content
+---------------------------------------------------------------------------------------------------- */
+
+.block-contact-adress{
+    padding-top:var(--margin-l);
+    padding-bottom: var(--margin-l);
+    background-color: var(--color-secondary);
+    .wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: var(--margin-l);
+        width: 100%;
+        max-width: var(--content-width);
+        p{
+            font-family: var(--font-light);
+        }
+        @media only screen and (min-width: $mq-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media only screen and (min-width: $mq-tabletbig) {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/* # CTA Orange
+---------------------------------------------------------------------------------------------------- */
+
+.block-page-cta-orange{
+    padding-top:var(--margin-l);
+    padding-bottom: var(--margin-l);
+    background-color: var(--color-primary);
+    color: var(--color-tint);
+    .wrap{
+        width: 100%;
+        max-width: var(--content-width);
+        section{
+            width: 100%;
+            // max-width: var(--measure-0);
+        }
+        p{
+            font-family: var(--font-bold);
+            font-size: clamp(var(--font-size-xxl), 4vw, var(--font-size-xxxxl));
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        a.section-link{
+            display: block;
+            margin-top: 0;
+            margin-bottom: var(--margin-xs);
+            color: var(--color-tint);
+            font-family: var(--font-light);
+            // font-size: var(--font-size-xxl);
+            font-size: clamp(var(--font-size-l), 4vw, var(--font-size-xxl));
+            line-height: 1;
+            text-transform: uppercase;
+            &:hover{
+                color: var(--color-tint);
+                .icon-arrow-right{
+                    margin-left: 1em;
+                }
+            }
+        }
+        .icon-arrow-right{
+            stroke: var(--color-tint);
+            stroke-width:2em;
+            height: .8em;
+            width: .8em;
+            margin-left: .33em;
+            margin-top: .1em;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition:    all 0.3s ease-in-out;
+            -ms-transition:     all 0.3s ease-in-out;
+            -o-transition:      all 0.3s ease-in-out;
+            transition:         all 0.3s ease-in-out;
+        }
+    }
+}

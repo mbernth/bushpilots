@@ -1,0 +1,39 @@
+/* # Mono Icon styles
+---------------------------------------------------------------------------------------------------- */
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	color: $color-tint;
+	fill: currentColor;
+}
+.icon-stepup-arrow {
+	width: 39px;
+	height: 20px;
+}
+.icon-phone {
+	width: 20px;
+	height: 20px;
+}
+.icon-mail {
+	width: 20px;
+	height: 20px;
+}
+.icon-warning {
+	width: 20px;
+	height: 20px;
+}
+.icon-arrow-left5 {
+	width: 20px;
+	height: 20px;
+}
+.icon-arrow-right5 {
+	width: 20px;
+	height: 20px;
+}
+.icon-arrow-right {
+	fill: transparent;
+	stroke: var(--color-shade);
+	stroke-miterlimit:10;
+	stroke-width:3em;
+	width: 20px;
+	height: 20px;
+}

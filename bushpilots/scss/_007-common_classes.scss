@@ -1,0 +1,175 @@
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Avatar
+---------------------------------------------------------------------- */
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+	margin-right: 20px;
+}
+
+.alignright .avatar {
+	margin-left: 20px;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+}
+
+/* ## Genesis
+---------------------------------------------------------------------- */
+
+.breadcrumb {
+	display: block;
+	float: left;
+	width: 100%;
+	background-color: $color-tint;
+	margin-bottom: calc(#{$g_scala} * #{$g_scala + em});
+	[class^="icon-"]{
+		position: relative;
+		top: 5px;
+	}
+}
+.breadcrumb .wrap{
+	width: 90%;
+}
+
+.archive-description{
+	// margin-top: var(--margin-m);
+	// padding-top: var(--margin-m);
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
+	padding-left: var(--margin-m);
+	padding-right: var(--margin-m);
+	margin-bottom: var(--margin-m);
+}
+.archive{
+	&--link{
+		&--picture{
+			display: block;
+		}
+	}
+}
+.author-box {
+	margin: 0 auto 30px auto;
+	width: 90%;
+}
+
+.author-box-title {
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
+	margin-bottom: 5px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* ## Titles
+---------------------------------------------------------------------- */
+
+.archive-title {
+	font-family: var(--font-light);
+	font-size: clamp($t_font_size_h2, 4vw, 7vw);
+	line-height: var(--line-height-s);
+	margin-bottom: 0;
+}
+.entry-title {
+	font-family: var(--font-light);
+	// font-size: clamp($t_font_size_h2, 4vw, 7vw);
+	line-height: var(--line-height-s);
+	margin-bottom: 0;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: $color-primary;
+	text-decoration:none;
+}
+.entry-title a{
+	display: block;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	color: tint($color-primary, 20%);
+}
+
+.widget-title {
+	font-size: var(--font-size-h4);
+	line-height: var(--line-height-s);
+}
+
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+a.aligncenter img {
+	display: block;
+	margin: 0 auto;
+}
+
+a.alignnone {
+	display: inline-block;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+	justify-self: end;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+	max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 0;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 $g_margin-small $g_margin-small 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 $g_margin-small $g_margin-small;
+}
+
+.wp-caption-text {
+	margin-top:5px;
+	font-size: var(--font-size-s);
+			line-height: var(--line-height-m);
+}
+
+.entry-content p.wp-caption-text {
+	margin-bottom: 0;
+}
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 calc(#{$g_scala} * #{$g_scala + em});
+}

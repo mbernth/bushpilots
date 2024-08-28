@@ -1,0 +1,13 @@
+/* ### Cookieinformation
+---------------------------------------------------------------------- */
+#Coi-Renew{
+    left:unset !important;
+    right: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    opacity: 0.5;
+    @media only screen and (min-width: $mq-tablet) {
+        height: 60px !important;
+        width: 60px !important;
+    }
+}

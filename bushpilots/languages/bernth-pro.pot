@@ -1,0 +1,481 @@
+# <!=Copyright (C) 2020 mono voce
+# This file is distributed under GNU General Public License v3.0.=!>
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bushpilots 1.0.0\n"
+"Report-Msgid-Bugs-To: StudioPress <ciao@monovoce.dk>\n"
+"POT-Creation-Date: 2023-10-08 11:07+0200\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: __parked files/customize.php:26 lib/customizer.php:26
+msgid "Personalize the bushpilots theme with these available options."
+msgstr ""
+
+#: __parked files/customize.php:27 lib/customizer.php:27
+msgid "bushpilots Settings"
+msgstr ""
+
+#: __parked files/customize.php:47
+msgid ""
+"Change the default color for hovers for linked titles, menu links, entry "
+"meta links, and more."
+msgstr ""
+
+#: __parked files/customize.php:48
+msgid "Link Color"
+msgstr ""
+
+#: __parked files/customize.php:70
+msgid ""
+"Change the color used for block-based buttons and the hover color for other "
+"buttons."
+msgstr ""
+
+#: __parked files/customize.php:71
+msgid "Accent Color"
+msgstr ""
+
+#: __parked files/customize.php:93
+msgid "Change the default color for start of footer gradient."
+msgstr ""
+
+#: __parked files/customize.php:94
+msgid "Footer Start Color"
+msgstr ""
+
+#: __parked files/customize.php:116
+msgid "Change the default color for end of footer gradient."
+msgstr ""
+
+#: __parked files/customize.php:117
+msgid "Footer End Color"
+msgstr ""
+
+#: __parked files/customize.php:137 lib/customizer.php:45
+msgid "Show Menu Search Icon?"
+msgstr ""
+
+#: __parked files/customize.php:138 lib/customizer.php:46
+msgid "Check the box to show a search icon in the menu."
+msgstr ""
+
+#: __parked files/customize.php:157
+msgid "Enable the \"intro\" paragraph style on single posts?"
+msgstr ""
+
+#: __parked files/customize.php:158
+msgid ""
+"Check the box to automatically apply the \"intro\" font size and style to "
+"the first paragraph of all single posts."
+msgstr ""
+
+#: __parked files/customize.php:179
+msgid "Select an image to display above the footer credits."
+msgstr ""
+
+#: __parked files/customize.php:180
+msgid "Footer Logo"
+msgstr ""
+
+#: __parked files/functions_old.php:137 functions.php:122
+msgid "Menu"
+msgstr ""
+
+#: __parked files/functions_old.php:139 functions.php:124
+msgid "Submenu"
+msgstr ""
+
+#: __parked files/functions_old.php:165 functions.php:219
+msgid "Before Header"
+msgstr ""
+
+#: __parked files/functions_old.php:166 functions.php:220
+msgid "This is the before header widget area."
+msgstr ""
+
+#: config/block-editor-settings.php:39
+msgid "Black color"
+msgstr ""
+
+#: config/block-editor-settings.php:44
+msgid "White color"
+msgstr ""
+
+#: config/block-editor-settings.php:49
+msgid "Primary color"
+msgstr ""
+
+#: config/block-editor-settings.php:54
+msgid "Secondary color"
+msgstr ""
+
+#: config/block-editor-settings.php:59
+msgid "Active color"
+msgstr ""
+
+#: config/block-editor-settings.php:66
+msgid "Small"
+msgstr ""
+
+#: config/block-editor-settings.php:71
+msgid "Large"
+msgstr ""
+
+#: config/block-editor-settings.php:76
+msgid "Larger"
+msgstr ""
+
+#: config/onboarding-shared.php:20
+msgid "Atomic Blocks"
+msgstr ""
+
+#: config/onboarding-shared.php:25
+msgid "Simple Social Icons"
+msgstr ""
+
+#: config/onboarding.php:20
+msgid "Minimal"
+msgstr ""
+
+#: config/onboarding.php:21
+msgid "A mono voce aps theme for Genesis"
+msgstr ""
+
+#: functions.php:350
+msgid "Mono Blocks"
+msgstr ""
+
+#: functions.php:361
+msgid "Side citat"
+msgstr ""
+
+#: functions.php:362
+msgid "Side citat."
+msgstr ""
+
+#: functions.php:375
+msgid "Brødtekst"
+msgstr ""
+
+#: functions.php:376
+msgid "Brødtekst på lyseblå baggrund"
+msgstr ""
+
+#: functions.php:389
+msgid "Call to action - hvid"
+msgstr ""
+
+#: functions.php:390
+msgid "Call to action i hvid boks"
+msgstr ""
+
+#: functions.php:403
+msgid "Call to action - blå"
+msgstr ""
+
+#: functions.php:404
+msgid "Call to action i blå boks"
+msgstr ""
+
+#: functions.php:417
+msgid "Sort tekst boks"
+msgstr ""
+
+#: functions.php:418
+msgid "Sort tekst boks med stor hvid skrift"
+msgstr ""
+
+#: functions.php:431
+msgid "Hero Advanced"
+msgstr ""
+
+#: functions.php:432
+msgid "A custom advanced hero block."
+msgstr ""
+
+#: functions.php:445
+msgid "Services listmenu"
+msgstr ""
+
+#: functions.php:446
+msgid "Services listmenu."
+msgstr ""
+
+#: functions.php:459
+msgid "Timeline"
+msgstr ""
+
+#: functions.php:460
+msgid "Tidslinje"
+msgstr ""
+
+#: functions.php:473
+msgid "Team"
+msgstr ""
+
+#: functions.php:474
+msgid "A custom team block."
+msgstr ""
+
+#: functions.php:487
+msgid "Kontakt addresse"
+msgstr ""
+
+#: functions.php:488
+msgid "Kontakt addresse med kort i boks"
+msgstr ""
+
+#: functions.php:501
+msgid "Medarbejder"
+msgstr ""
+
+#: functions.php:502
+msgid "Medarbejder information"
+msgstr ""
+
+#: lib/helper-functions.php:170
+msgid "Show Search"
+msgstr ""
+
+#: lib/helper-functions.php:180
+msgid "Hide Search"
+msgstr ""
+
+#: lib/template-parts/blocks/team-member.php:82 single-team.php:72
+msgid "I recently..."
+msgstr ""
+
+#: lib/template-parts/blocks/team-member.php:88 single-team.php:78
+msgid "Qualifications and experience"
+msgstr ""
+
+#: lib/template-parts/blocks/team-member.php:92 single-team.php:82
+msgid "Memberships"
+msgstr ""
+
+#: lib/template-parts/blocks/team.php:73
+msgid "Partner"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:6
+msgid "Team members"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:7
+msgid "Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:8
+msgctxt "Team members"
+msgid "Add New Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:9
+msgid "Add New Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:10
+msgid "Edit Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:11
+msgid "New Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:12
+msgid "All Team members"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:13
+msgid "View Team member"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:14
+msgid "Search Team members"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:15
+msgid "No team members found"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:16
+msgid "No team members found in trash"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:40
+msgctxt "taxonomy general name"
+msgid "Team member Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:41
+msgctxt "taxonomy singular name"
+msgid "Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:42
+msgid "Search Team member Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:43
+msgid "All Team member Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:44
+msgid "Parent Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:45
+msgid "Parent Team member Category:"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:46
+msgid "Edit Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:47
+msgid "Update Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:48
+msgid "Add New Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:49
+msgid "New Team member Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_team.php:50
+msgid "Team member Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:6
+msgid "Works"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:7
+msgid "Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:8
+msgctxt "Works"
+msgid "Add New Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:9
+msgid "Add New Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:10
+msgid "Edit Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:11
+msgid "New Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:12
+msgid "All Works"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:13
+msgid "View Work"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:14
+msgid "Search Works"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:15
+msgid "No works found"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:16
+msgid "No works found in trash"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:40
+msgctxt "taxonomy general name"
+msgid "Work Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:41
+msgctxt "taxonomy singular name"
+msgid "Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:42
+msgid "Search Work Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:43
+msgid "All Work Categories"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:44
+msgid "Parent Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:45
+msgid "Parent Work Category:"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:46
+msgid "Edit Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:47
+msgid "Update Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:48
+msgid "Add New Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:49
+msgid "New Work Category"
+msgstr ""
+
+#: lib/template-parts/post-types/post_type_work.php:50
+msgid "Work Categories"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:55
+#, php-format
+msgid ""
+"Please install and activate <a href=\"https://wordpress.org/plugins/genesis-"
+"connect-woocommerce/\" target=\"_blank\">Genesis Connect for WooCommerce</"
+"a> to <strong>enable WooCommerce support for %s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:72
+msgid "install and activate Genesis Connect for WooCommerce"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:76
+#, php-format
+msgid "Please %1$s to <strong>enable WooCommerce support for %2$s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:73
+msgid "Previous Page"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:74
+msgid "Next Page"
+msgstr ""

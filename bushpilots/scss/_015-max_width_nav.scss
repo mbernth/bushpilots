@@ -1,0 +1,382 @@
+/* # Max Width Nav
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: $mq-nav) {
+// Table of Contents
+
+
+//	- 001 # HTML5 Reset
+// ----------------------------------------------------------------------------------------------------
+//		    ## Baseline Normalize
+//		    ## Box Sizing
+//          ## Float Clearing
+
+//  - 002 # Mixins
+// ----------------------------------------------------------------------------------------------------
+//	        ## Typography
+//	        ## Border Radius
+//	        ## Gradients
+//          ## Grid
+//          ## Tint and shade
+
+//  - 003 # Variables
+// ----------------------------------------------------------------------------------------------------
+//	        ## Colours
+//	        ## Typography
+//	        ## Media Queries
+//          ## Site Structure
+
+//  - 004 # Arrays
+// ----------------------------------------------------------------------------------------------------
+//	        ## Breakpoints
+//	        ## Responsive Typography
+//			## Gutenberg
+//				### Color mixins
+//				### Gutenberg Front-end Styles
+
+//	- 005 # Defaults
+// ----------------------------------------------------------------------------------------------------
+//			## Typographical Elements
+//			## Headings
+//			## Objects
+//			## Forms
+//				### Forms Colored Rows
+//			## Tables
+//			## Screen Reader Text
+
+//	- 006 # Structure and Layout
+// ----------------------------------------------------------------------------------------------------
+//			## Site Container
+//			## Site Inner
+//			## Grid Containers
+//				### Grid Containers coloured backgrounds
+body.fixed .site-container{
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+}
+
+//	- 007 # Common Classes
+// ----------------------------------------------------------------------------------------------------
+//			## Avatar
+//			## Genesis
+//			## Search Form
+//			## Titles
+//			## WordPress
+
+//	- 008 # Widgets
+// ----------------------------------------------------------------------------------------------------
+//			## Featured Content
+
+//	- 009 # Plugins
+// ----------------------------------------------------------------------------------------------------
+//			## Skip Links
+
+//	- 010 # Site Header
+// ----------------------------------------------------------------------------------------------------
+//			## Title Area
+.site-header{
+    .wrap{
+        // flex-direction: column;
+        // align-items: flex-start;
+    }
+}
+//	- 011 # Site Navigation
+// ----------------------------------------------------------------------------------------------------
+//			## Header Menu
+//			## Footer Menu
+//			## Accessible Menu
+body.fixed .nav-primary{
+    background-color: $color-secondary;
+    height: 100%;
+    overflow: scroll;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .sub-menu a,
+.genesis-responsive-menu .genesis-nav-menu .sub-menu,
+.js .nav-primary {
+    width: 100%;
+}
+.genesis-nav-menu li {
+    float: none;
+}
+.genesis-nav-menu .sub-menu a{
+    padding: var(--margin-xxs) 0;
+}
+.genesis-responsive-menu .wrap {
+    padding: 83px 0;
+    width: 90%;
+}
+
+.genesis-responsive-menu {
+    display: none;
+    position: relative;
+}
+
+.site-header > .wrap > .genesis-responsive-menu {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 500;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+    transition:         all 0.3s ease-in-out;
+    &.open{
+        top: 0;
+    }
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+    border-width: 0;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    visibility: visible;
+    width: 43px;
+    min-width: unset;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover,
+.sub-menu-toggle:focus,
+.sub-menu-toggle:hover {
+    background: transparent;
+    border-width: 0;
+    box-shadow: none;
+}
+
+.js .genesis-nav-menu > .menu-item .sub-menu > .menu-item:first-child,
+.js .genesis-nav-menu > .menu-item > .sub-menu > .menu-item:last-child,
+.js .genesis-nav-menu .sub-menu a {
+    background-color: transparent;
+    color: $color-shade;
+}
+
+.js #genesis-mobile-nav-primary{
+    position: absolute;
+    bottom: 18px;
+    right: var(--site-margin);
+    height: 50%;
+    width: 25px;
+    min-width: unset;
+    background-color: transparent;
+    font-size: var(--font-size-s);
+			line-height: var(--line-height-m);
+    font-weight: 600;
+    color: $color-tint;
+    text-align: left;
+    text-indent: -999em;
+    text-shadow: none;
+    border-radius: 0px;
+    overflow: visible;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition:    all 0.2s ease-in-out;
+	-ms-transition:     all 0.2s ease-in-out;
+	-o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+    z-index: 600;
+    &::before{
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: $color-tint;
+        height: 4px;
+        width: 25px;
+        border-radius: 2px;
+        z-index: 1000;
+        top: calc(50% - 5px);
+        left: calc(50% - 12.5px);
+        -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition:    all 0.2s ease-in-out;
+	    -ms-transition:     all 0.2s ease-in-out;
+	    -o-transition:      all 0.2s ease-in-out;
+        transition:         all 0.2s ease-in-out;
+    }
+    &::after{
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: $color-tint;
+        height: 4px;
+        width: 25px;
+        border-radius: 2px;
+        z-index: 1000;
+        top: calc(50% - -2px);
+        left: calc(50% - 12.5px);
+        -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition:    all 0.2s ease-in-out;
+	    -ms-transition:     all 0.2s ease-in-out;
+	    -o-transition:      all 0.2s ease-in-out;
+        transition:         all 0.2s ease-in-out;
+    }
+}
+
+#genesis-mobile-nav-primary.activated {
+    border-bottom-color: transparent;
+    color: var(--color-primary);
+    &::before{
+        background-color: var(--color-primary);
+        top: calc(50% - 3px);
+        transform: rotate(-45deg);
+    }
+    &::after{
+        background-color: var(--color-primary);
+        top: calc(50% - 3px);
+        transform: rotate(45deg);
+    }
+}
+
+/*
+#genesis-mobile-nav-primary:focus,
+#genesis-mobile-nav-primary:hover {
+    color: var(--color-active);
+    &::before,
+    &::after{
+        background-color: var(--color-active);
+    }
+}
+*/
+.menu-toggle {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.menu-toggle::before {
+    margin-right: 5px;
+    text-rendering: auto;
+    vertical-align: bottom;
+}
+
+.sub-menu-toggle {
+    background: transparent;
+    float: right;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    z-index: 100;
+    &::before{
+        content: '';
+        display: inline-block;
+        border-left:    9px solid transparent;
+        border-right:   9px solid transparent;
+        border-bottom:  9px solid var(--color-primary);
+        transform: rotate(180deg);
+        transition: transform 0.25s ease-in-out;
+    }
+}
+
+.sub-menu-toggle.activated::before {
+    transform: rotate(0deg);
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item {
+    display: block;
+    float: none;
+    position: relative;
+    text-align: left;
+    // padding: 15px 0;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item:focus,
+.genesis-responsive-menu .genesis-nav-menu .menu-item:hover {
+    position: relative;
+}
+
+.genesis-responsive-menu .genesis-nav-menu a:focus,
+.genesis-responsive-menu .genesis-nav-menu a:hover,
+.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:focus,
+.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:hover,
+.genesis-responsive-menu.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
+    color: var(--color-primary);
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item a,
+.genesis-responsive-menu .toggle-header-search {
+    border: none;
+    margin-bottom: 1px;
+    width: calc(100% - 50px);
+    text-transform: uppercase;
+}
+
+.genesis-responsive-menu.nav-primary .genesis-nav-menu .sub-menu a {
+    color: $color-shade;
+}
+
+.genesis-nav-menu > .menu-item .sub-menu > .menu-item:first-child {
+    padding-top: 0;
+}
+
+.genesis-nav-menu > .menu-item .sub-menu > .menu-item:last-child {
+    padding-bottom: 5px;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .sub-menu::after,
+.genesis-responsive-menu .genesis-nav-menu .sub-menu::before,
+.genesis-responsive-menu .genesis-nav-menu > .menu-item-has-children > a::after {
+    content: none;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+    left: 0;
+    margin-left: 0;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .sub-menu {
+    // padding-top: 20px;
+    margin: 20px 0;
+    // border-top: 1px solid $color-primary;
+    clear: both;
+    display: none;
+    opacity: 1;
+    position: static;
+    width: 100%;
+    li{
+        // padding: var(--margin-xxs);
+    }
+}
+
+
+.genesis-responsive-menu .toggle-header-search {
+    display: none;
+}
+
+.genesis-nav-menu{
+    flex-direction: column;
+}
+
+.genesis-nav-menu a{
+    color: var(--color-shade);
+    font-family: var(--font-regular);
+    font-size: var(font-size-m);
+    
+}
+.genesis-responsive-menu .genesis-nav-menu .menu-item a{
+    text-transform: none;
+}
+
+//	- 012 # Content Area
+// ----------------------------------------------------------------------------------------------------
+//			## Entries
+//			## Entry Messages
+//			## Entry Meta
+//			## Pagination
+//			## Comments
+
+//	- 013 # Sidebar
+// ----------------------------------------------------------------------------------------------------
+
+//	- 014 # Site Footer
+// ----------------------------------------------------------------------------------------------------
+
+}

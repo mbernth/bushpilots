@@ -1,0 +1,524 @@
+/* # Variables
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Colour palette
+---------------------------------------------------------------------- */
+
+/* Shade */
+$color-shade:           #010101;
+
+/* Tint */
+$color-tint:            #fefefe;
+
+/* Primary */
+$color-primary:         #29548a; 
+
+/* Secondary */
+$color-secondary:       #d4dbe8; 
+
+/* Active - Active/Focused*/
+$color-active:          #de4f2e; 
+
+/* Accent 1 - Succes */
+$color-accent-one:      #4dffa6; 
+
+/* Accent 2 - Warning */
+$color-accent-two:      #fff04d; 
+
+/* Accent 3 - Error/Alert */
+$color-accent-three:    #ff4d6a;
+
+:root {
+    /* Shade */
+    --color-shade:                  #010101;
+    --color-shade-shade-20:         #010101;
+    --color-shade-shade-40:         #010101;
+    --color-shade-shade-60:         #010101;
+    --color-shade-shade-80:         #010101;
+    --color-shade-shade-90:         #010101;
+    --color-shade-tint-20:          #343434;
+    --color-shade-tint-40:          #676767;
+    --color-shade-tint-60:          #999999;
+    --color-shade-tint-80:          #CCCCCC;
+
+    /* Tint */
+    --color-tint:                   #fefefe;
+    --color-tint-shade-20:          #CBCBCB;
+    --color-tint-shade-40:          #999999;
+    --color-tint-shade-60:          #656565;
+    --color-tint-shade-80:          #323232;
+    --color-tint-tint-20:           #FEFEFE;
+    --color-tint-tint-40:           #FFFFFF;
+    --color-tint-tint-60:           #FFFFFF;
+    --color-tint-tint-80:           #FFFFFF;
+
+    /* Primary */
+    --color-primary:                #29548a;
+    --color-primary-shade-20:       #20436F;
+    --color-primary-shade-40:       #183353;
+    --color-primary-shade-60:       #0F2137;
+    --color-primary-shade-80:       #08111B;
+    --color-primary-tint-20:        #5476A2;
+    --color-primary-tint-40:        #7F99B9;
+    --color-primary-tint-60:        #A9BAD0;
+    --color-primary-tint-80:        #D4DDE7;
+
+    /* Secondary */
+    --color-secondary:              #d4dbe8;
+    --color-secondary-shade-20:     #AAAFBA;
+    --color-secondary-shade-40:     #80848C;
+    --color-secondary-shade-60:     #53575C;
+    --color-secondary-shade-80:     #2B2C2F;
+    --color-secondary-tint-20:      #DDE2ED;
+    --color-secondary-tint-40:      #E6EAF2;
+    --color-secondary-tint-60:      #EDF0F5;
+    --color-secondary-tint-80:      #F6F8FA;
+
+    /* Active - Active/Focused*/
+    --color-active:                 #de4f2e;
+    --color-active-shade-20:        #B23F26;
+    --color-active-shade-40:        #86301D;
+    --color-active-shade-60:        #581F11;
+    --color-active-shade-80:        #2C1008;
+    --color-active-tint-20:         #E57258;
+    --color-active-tint-40:         #EC9682;
+    --color-active-tint-60:         #F1B8AB;
+    --color-active-tint-80:         #F8DCD5;
+
+    /* Accent 1 - Success */
+    --color-success:                #4dffa6;
+    --color-success-shade-20:       #3ecc85;
+    --color-success-shade-40:       #2e9964;
+    --color-success-shade-60:       #1f6642;
+    --color-success-shade-80:       #0f3321;
+    --color-success-tint-20:        #71ffb8;
+    --color-success-tint-40:        #94ffca;
+    --color-success-tint-60:        #b8ffdb;
+    --color-success-tint-80:        #dbffed;
+
+    /* Accent 2 - Warning */
+    --color-warning:            #fff04d;
+    --color-warning-shade-20:   #ccc03e;
+    --color-warning-shade-40:   #99902e;
+    --color-warning-shade-60:   #66601f;
+    --color-warning-shade-80:   #33300f;
+    --color-warning-tint-20:    #fff371;
+    --color-warning-tint-40:    #fff694;
+    --color-warning-tint-60:    #fff9b8;
+    --color-warning-tint-80:    #fffcdb;
+
+    /* Accent 3 - Error/Alert */
+    --color-alert:              #ff4d6a;
+    --color-alert-shade-20:     #cc3e55;
+    --color-alert-shade-40:     #992e40;
+    --color-alert-shade-60:     #661f2a;
+    --color-alert-shade-80:     #330f15;
+    --color-alert-tint-20:      #ff7188;
+    --color-alert-tint-40:      #ff94a6;
+    --color-alert-tint-60:      #ffb8c3;
+    --color-alert-tint-80:      #ffdbe1;
+
+    /* 
+        Tint and Shade Generator
+        https://maketintsandshades.com/
+    */
+}
+
+/* ### Global colours
+---------------------------------------------------------------------- */
+
+/* Global body values 
+$g_body-background-color:       $color-shade;
+$g_font_color_default:          $color-tint;
+*/
+
+/* Default body link 
+$g_font-bread-a-color:          $color-active;
+$g_font-bread-a-hover-color:    $color-active;
+*/
+
+/* Mark
+$g_font-mark-color:             $color-shade;
+$g_font-mark-background-color:  $color-tint;
+ */
+
+/* Button */
+$g_font-button_radius: 2;
+
+// Default button
+$g_font-button-background-color:                    $color-active;
+$g_font-button-color:                               $color-tint;
+$g_font-button-color-hover:                         $color-tint;
+$g_font-button-background-color-hover:              shade($color-active, 20%);
+$g_font-button-box-shadow-hover:                    10px 10px 10px 0px rgba(0, 11, 18, 0.25), inset 0 0 200px rgba(230, 230, 230, 0.25);
+
+// Disabled button
+$g_font-button-disabled-background-color:           tint($color-shade, 80%);
+$g_font-button-disabled-color:                      $color-tint;
+$g_font-button-disabled-color-hover:                $color-tint;
+$g_font-button-disabled-background-color-hover:     tint($color-shade, 80%);
+$g_font-button-disabled-box-shadow-hover:           0px 0px 0px 0px rgba(14, 28, 45, 0);
+
+// Primary button
+$g_font-button-primary-background-color:            $color-primary;
+$g_font-button-primary-color:                       $color-tint;
+$g_font-button-primary-color-hover:                 $color-tint;
+$g_font-button-primary-background-color-hover:      tint($color-primary, 20%);
+$g_font-button-primary-box-shadow-hover:            10px 10px 10px 0px rgba(0, 11, 18, 0.25), inset 0 0 200px rgba(230, 230, 230, 0.25);
+
+// Info button
+$g_font-button-info-background-color:               $color-shade;
+$g_font-button-info-color:                          $color-tint;
+$g_font-button-info-color-hover:                    $color-tint;
+$g_font-button-info-background-color-hover:         tint($color-shade, 20%);
+$g_font-button-info-box-shadow-hover:               10px 10px 10px 0px rgba(0, 11, 18, 0.25), inset 0 0 200px rgba(230, 230, 230, 0.25);
+
+// Alert button
+$g_font-button-alert-background-color:              $color-accent-three;
+$g_font-button-alert-color:                         $color-tint;
+$g_font-button-alert-color-hover:                   $color-tint;
+$g_font-button-alert-background-color-hover:        tint($color-accent-three, 20%);
+$g_font-button-alert-box-shadow-hover:              10px 10px 10px 0px rgba(0, 11, 18, 0.25), inset 0 0 200px rgba(230, 230, 230, 0.25);
+
+:root {
+    /* Global body values */
+    --color-body-background:                var(--color-shade);
+    --color-body-text:                      var(--color-tint);
+
+    /* Default body link */
+    --color-body-link:                      var(--color-shade);
+    --color-body-link-hover:                var(--color-primary);
+
+    /* Mark */
+    --color-body-mark-text:                 var(--color-body-background);
+    --color-body-mark-background:           var(--color-body-text);
+
+    /* Default button */
+    --color-button-text:                    var(--color-tint);
+    --color-button-text-hover:              var(--color-tint);
+    --color-button-back:                    var(--color-active);
+    --color-button-back-hover:              var(--color-active-shade-20);
+
+    /* Primary button */
+    --color-button-primary-text:            var(--color-tint);
+    --color-button-primary-text-hover:      var(--color-tint);
+    --color-button-primary-back:            var(--color-primary);
+    --color-button-primary-back-hover:      var(--color-primary-shade-20);
+
+    /* Info button */
+    --color-button-info-text:               var(--color-shade);
+    --color-button-info-text-hover:         var(--color-shade);
+    --color-button-info-back:               var(--color-secondary);
+    --color-button-info-back-hover:         var(--color-secondary-shade-20);
+
+    /* Alert button */
+    --color-button-alert-text:              var(--color-tint);
+    --color-button-alert-text-hover:        var(--color-tint);
+    --color-button-alert-back:              var(--color-alert);
+    --color-button-alert-back-hover:        var(--color-active-shade-20);
+
+    /* Disabled button */
+    --color-button-disabled-text:            var(--color-shade);
+    --color-button-disabled-text-hover:      var(--color-shade);
+    --color-button-disabled-back:            var(--color-shade-tint-80);
+    --color-button-disabled-back-hover:      var(--color-shade-tint-80);
+}
+
+
+/* ## Defaults Globals
+---------------------------------------------------------------------- */
+$g_scala:   1.2;
+$g_measure: 65ch;
+
+$g_measure_0: $g_measure;
+$g_measure_-1: calc($g_measure / $g_scala);
+
+
+/* ## Typography
+---------------------------------------------------------------------- */
+$t_root:    1.28;
+
+
+$t_size_0:  ($t_root * $g_scala);
+
+$t_size_1:  ($t_size_0 * $g_scala);
+$t_size_2:  ($t_size_0 * $g_scala * $g_scala);
+$t_size_3:  ($t_size_0 * $g_scala * $g_scala * $g_scala);
+$t_size_4:  ($t_size_0 * $g_scala * $g_scala * $g_scala * $g_scala);
+$t_size_5:  ($t_size_0 * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala);
+
+$t_size_6:  ($t_size_0 * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala);
+$t_size_7:  ($t_size_0 * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala * $g_scala);
+
+$t_size_-5:  calc($t_size_0 / $g_scala / $g_scala / $g_scala / $g_scala / $g_scala);
+$t_size_-4:  calc($t_size_0 / $g_scala / $g_scala / $g_scala / $g_scala);
+$t_size_-3:  calc($t_size_0 / $g_scala / $g_scala / $g_scala);
+$t_size_-2:  calc($t_size_0 / $g_scala / $g_scala);
+$t_size_-1:  calc($t_size_0 / $g_scala);
+
+$t_font_size_smallest:      calc(#{$t_size_-3 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_smaller:       calc(#{$t_size_-2 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_small:         calc(#{$t_size_-1 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_root:          calc(#{$t_size_0 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_large:         calc(#{$t_size_1 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_larger:        calc(#{$t_size_2 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_giant:         calc(#{$t_size_7 + rem} + (#{$g_scala + vw} / 10));
+
+$t_font_size_entry_title:   calc(#{$t_size_5 + rem} + (#{$g_scala + vw} / 10));
+
+$t_font_size_h1:            calc(#{$t_size_5 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_h2:            calc(#{$t_size_4 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_h3:            calc(#{$t_size_3 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_h4:            calc(#{$t_size_2 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_h5:            calc(#{$t_size_1 + rem} + (#{$g_scala + vw} / 10));
+$t_font_size_h6:            calc(#{$t_size_0 + rem} + (#{$g_scala + vw} / 10));
+
+// $t_line-height: $g_scala * $g_scala;
+// $t_line-height_small: $g_scala / $g_scala;
+
+:root {
+    /* -- ROOT SETTINGS -- */
+    --type-scale:       1.2;                                  /* Typography Scala */
+    --type-root:        1.6;                                  /* Normal reading size starting point */
+    --type-root-max:    2.0;                                  /* Maxium size for normal reading text */
+
+    --measure-0:        65ch;                                 /* Reading measure */
+
+    --content-width:    77.375em;
+
+    --type-increase: calc(var(--type-scale) * 1vw);         /* Type increase as screen gets wider */
+    
+    /* Starting sizes */
+    --type--2: calc(var(--type--1) / var(--type-scale));
+    --type--1: calc(var(--type-0) / var(--type-scale));
+    --type-0: calc(var(--type-root) * 1rem);
+    --type-1: calc(var(--type-0) * var(--type-scale));
+    --type-2: calc(var(--type-1) * var(--type-scale));
+    --type-3: calc(var(--type-2) * var(--type-scale));
+    --type-4: calc(var(--type-3) * var(--type-scale));
+    --type-5: calc(var(--type-4) * var(--type-scale));
+    --type-6: calc(var(--type-5) * var(--type-scale));
+    --type-7:calc(var(--type-6) * var(--type-scale));
+    --type-8:calc(var(--type-7) * var(--type-scale));
+    --type-9:calc(var(--type-8) * var(--type-scale));
+    --type-10:calc(var(--type-9) * var(--type-scale));
+    --type-hero: var(--type-6);
+    --type-text-image-title: var(--type-5);
+    
+    /* Ending sizes */
+    --type--2-max: calc(var(--type--1-max) / var(--type-scale));
+    --type--1-max: calc(var(--type-0-max) / var(--type-scale));
+    --type-0-max: calc(var(--type-root-max) * 1rem);
+    --type-1-max: calc(var(--type-0-max) * var(--type-scale));
+    --type-2-max: calc(var(--type-1-max) * var(--type-scale));
+    --type-3-max: calc(var(--type-2-max) * var(--type-scale));
+    --type-4-max: calc(var(--type-3-max) * var(--type-scale));
+    --type-5-max: calc(var(--type-4-max) * var(--type-scale));
+    --type-6-max: calc(var(--type-5-max) * var(--type-scale));
+    --type-7-max: calc(var(--type-6-max) * var(--type-scale));
+    --type-8-max: calc(var(--type-7-max) * var(--type-scale));
+    --type-9-max: calc(var(--type-8-max) * var(--type-scale));
+    --type-10-max: calc(var(--type-9-max) * var(--type-scale));
+    --type-hero-max: var(--type-8-max);
+    --type-text-image-title-max: var(--type-9-max);
+
+    /* Resonsive calculations */    
+    --type--2-responsive: clamp(var(--type--2), calc(var(--type-scale) / var(--type-scale) / var(--type-scale) * var(--type-increase)), var(--type--1-max));
+    --type--1-responsive: clamp(var(--type--1), calc(var(--type-scale) / var(--type-scale) * var(--type-increase)), var(--type--1-max));
+    --type-0-responsive: clamp(var(--type-0), calc(var(--type-scale) * var(--type-increase)), var(--type-0-max));  
+    --type-1-responsive: clamp(var(--type-1), calc(var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-1-max));
+    --type-2-responsive: clamp(var(--type-2), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-2-max));
+    --type-3-responsive: clamp(var(--type-3), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-3-max));
+    --type-4-responsive: clamp(var(--type-4), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-4-max));
+    --type-5-responsive: clamp(var(--type-5), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-5-max));
+    --type-6-responsive: clamp(var(--type-6), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)),  var(--type-6-max));
+    --type-7-responsive:  clamp(var(--type-7),  calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-7-max));
+    --type-hero-responsive:  clamp(var(--type-hero),  calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-hero-max));
+    --type-hero-small-responsive:  clamp(var(--type-4), calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)),  var(--type-6-max));
+    --type-text-image-title-responsive:  clamp(var(--type-text-image-title),  calc(var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-increase)), var(--type-text-image-title-max));
+
+
+    /* Font-sizes */
+    --font-size-xs:     var(--type--2-responsive);
+    --font-size-s:      var(--type--1-responsive);
+    --font-size-m:      var(--type-0-responsive);
+    --font-size-l:      var(--type-1-responsive);
+    --font-size-xl:      var(--type-2-responsive);
+    --font-size-xxl:     var(--type-3-responsive);
+    --font-size-xxxl:    var(--type-4-responsive);
+    --font-size-xxxxl:   var(--type-5-responsive);
+    --font-size-xxxxxl:  var(--type-6-responsive);
+
+    --font-size-h6:     var(--font-size-m);
+    --font-size-h5:     var(--font-size-l);
+    --font-size-h4:     var(--font-size-xl);
+    --font-size-h3:     var(--font-size-xxl);
+    --font-size-h2:     var(--font-size-xxxl);
+    --font-size-h1:     var(--font-size-xxxxl);
+
+    --font-size-entry-title:     var(--font-size-h1);
+
+    /* Line heights */
+    --line-height-xs:   calc(var(--type-scale) / var(--type-scale));
+    --line-height-s:    var(--type-scale);
+    --line-height-m:    calc(var(--type-scale) * var(--type-scale));
+    --line-height-l:    calc(var(--type-scale) * var(--type-scale) * var(--type-scale));
+
+    
+    /* Responsive margins */
+    --margin-0:calc((var(--type-scale) * 1rem) + (var(--type-scale) * var(--type-increase)));
+    --margin-1:calc(var(--margin-0) * 1.5);
+    --margin-2:calc(var(--margin-0) * 2);
+    --margin-3:calc(var(--margin-0) * 2.5);
+    --margin-4:calc(var(--margin-0) * 3);
+    --margin-5:calc(var(--margin-0) * 3.5);
+    --margin-6:calc(var(--margin-0) * 4);
+    
+    --margin--1:calc(var(--margin-0) / 1.5);
+    --margin--2:calc(var(--margin-0) / 2);
+    --margin--3:calc(var(--margin-0) / 2.5);
+    --margin--4:calc(var(--margin-0) / 3);
+
+    /* Margin Sizes */
+    --margin-xxxs:  var(--margin--4);
+    --margin-xxs:   var(--margin--3);
+    --margin-xs:    var(--margin--2);
+    --margin-s:     var(--margin--1);
+    --margin-m:     var(--margin-0);
+    --margin-l:     var(--margin-1);
+    --margin-xl:    var(--margin-2);
+    --margin-xxl:   var(--margin-3);
+
+    --site-margin:  var(--margin-m);
+    
+  }
+
+
+/* ### Responsive typography
+---------------------------------------------------------------------- */
+
+/*
+
+$t_font_default:        ($t_font_size_root, $t_line-height, 300);
+
+$t_font_smallest:       ($t_font_size_smallest, $t_line-height);
+$t_font_smaller:        ($t_font_size_smaller, $t_line-height);
+$t_font_small:          ($t_font_size_small, $t_line-height);
+$t_font_large:          ($t_font_size_large, $t_line-height);
+$t_font_larger:         ($t_font_size_larger, $t_line-height);
+
+$t_font_h1:             ($t_font_size_h1, $t_line-height_small, 800);
+$t_font_h2:             ($t_font_size_h2, $t_line-height_small, 800);
+$t_font_h3:             ($t_font_size_h3, $t_line-height_small, 800);
+$t_font_h4:             ($t_font_size_h4, $t_line-height_small, 800);
+$t_font_h5:             ($t_font_size_h5, $t_line-height_small, 800);
+$t_font_h6:             ($t_font_size_h6, $t_line-height_small, 800);
+
+$t_font_entry_title:    ($t_font_size_entry_title, $t_line-height_small, 800);
+
+*/
+
+/* ### Font family
+---------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Halcyon-Regular';
+    scr: url('fonts/Halcyon-Regular.eot');
+    src: local('Halcyon-Regular'),
+      url('fonts/Halcyon-Regular.woff') format("woff"),
+      url('fonts/Halcyon-Regular.ttf') format("truetype"),
+      url('fonts/Halcyon-Regular.svg#svgFontName') format('svg');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Halcyon-RegularItalic';
+    scr: url('fonts/Halcyon-RegularItalic.eot');
+    src: local('Halcyon-RegularItalic'),
+      url('fonts/Halcyon-RegularItalic.woff') format("woff"),
+      url('fonts/Halcyon-RegularItalic.ttf') format("truetype"),
+      url('fonts/Halcyon-RegularItalic.svg#svgFontName') format('svg');
+    font-display: swap;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Halcyon-Bold';
+    scr: url('fonts/Halcyon-Bold.eot');
+    src: local('Halcyon-Bold'),
+      url('fonts/Halcyon-Bold.woff') format("woff"),
+      url('fonts/Halcyon-Bold.ttf') format("truetype"),
+      url('fonts/Halcyon-Bold.svg#svgFontName') format('svg');
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+  font-family: 'Halcyon-Black';
+  scr: url('fonts/Halcyon-Black.eot');
+  src: local('Halcyon-Black'),
+    url('fonts/Halcyon-Black.woff') format("woff"),
+    url('fonts/Halcyon-Black.ttf') format("truetype"),
+    url('fonts/Halcyon-Black.svg#svgFontName') format('svg');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+/* Global Font Faminly 
+$font-bread:        'Eastman-Regular', Helvetica, Arial, sans-serif;
+$font-bold:         'Eastman-Bold', Helvetica, Arial, sans-serif;
+$font-black:        'Eastman-Black', Helvetica, Arial, sans-serif;
+$font-headlines:    'Eastman-Black', Helvetica, Arial, sans-serif;
+$font-hero:         'Eastman-Black', Helvetica, Arial, sans-serif;
+$font-navigation:   'Eastman-Bold', Helvetica, Arial, sans-serif;
+*/
+
+:root {
+    /* Global Font Faminly */
+    --font-default:     'Halcyon-Regular', Helvetica, Arial, sans-serif;
+    --font-bold:        'Halcyon-Bold', Helvetica, Arial, sans-serif;
+    --font-regular:     'Halcyon-Regular', Helvetica, Arial, sans-serif;
+    --font-light:       'Halcyon-Black', Helvetica, Arial, sans-serif;
+    --font-headline:    'Halcyon-Black', Helvetica, Arial, sans-serif;
+    --font-navigation:  'Halcyon-Black', Helvetica, Arial, sans-serif;
+}
+
+/* ## Border Radius
+---------------------------------------------------------------------- */
+/* Globals */
+$radius: .5;
+
+/* ## Colored Gridcontainer
+---------------------------------------------------------------------- */
+$g_gridcontainer-light:                 shade($color-tint, 10%);
+$g_gridcontainer-light-font-color:      $color-shade;
+$g_gridcontainer-medium:                $color-secondary;
+$g_gridcontainer-medium-font-color:     $color-tint;
+$g_gridcontainer-dark:                  shade($color-primary, 0%);
+$g_gridcontainer-dark-font-color:       $color-tint;
+
+/* ## Media Queries
+---------------------------------------------------------------------- */
+$mq-phone:      37em;       /* 592 pixel */
+$mq-tablet:     48em;       /* 768 pixel */
+// $mq-nav:        63.938em;   /* 1023 pixel */
+$mq-nav:        47.938em;   /* 767 pixel */
+$mq-tabletbig:  64em;       /* 1024 pixel */
+$mq-laptop:     80em;       /* 1280 pixel */
+$mq-desktop:    100em;      /* 1600 pixel */
+$mq-large:      120em;      /* 1920 pixel */
+$mq-huge:       155em;      /* 2480 pixel */ 
+
+
+/* ## Site Structure
+---------------------------------------------------------------------- */
+
+$g_margin:          calc(#{$t_root + em} + (#{$g_scala + vw}));
+$g_margin-small:    calc(#{$g_margin} / 2);
+$g_margin-big:      calc(#{$g_margin} * 2);
